@@ -1,0 +1,27 @@
+# Seamless ETL Pipeline Project
+
+## Overview
+
+This project demonstrates a seamless ETL pipeline using AWS Glue, Amazon S3, Athena, and QuickSight.
+
+## Tools
+
+- AWS Glue (ETL)
+- Amazon S3 (Data storage)
+- Amazon Athena (Query processed data)
+- Amazon QuickSight (Dashboard/visualization)
+
+## Steps
+
+1. Upload raw data to S3 (`student-data-2025` bucket)
+2. Create and run AWS Glue ETL job to clean/process data
+3. Output written to S3 (`target-data-student` bucket)
+4. Query processed data using Athena
+5. Visualize results using QuickSight
+
+## Example Output
+
+| order_id | product | price | date       |
+| -------- | ------- | ----- | ---------- |
+| 101      | Mobile  | 15000 | 2025-09-01 |
+| 102      | Laptop  | 55000 | 2025-09-01 |
